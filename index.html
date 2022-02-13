@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="A survey form to ask Georgia Tech Students where they like to study">
+    <meta name="keywords" content="Survey, Georgia Tech, Studying, Location">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Studying Survey Form</h1>
+            <p id="description">Thanks for ranking the best place to study at</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+            </div>
+            <div class="form-group">
+                <label id="age-label" for="age">Age (Optional)</label>
+                <input type="number" name="age" id="age" min="1" max="999" class="form-control" placeholder="Enter your age"/>
+            </div>
+            <div class="form-group">
+                <label id="role-label" for="dropdown">What college do you belong in?</label>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="Business">Business</option>
+                    <option value="Computing">Computing</option>
+                    <option value="Design">Design</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Liberal Arts">Liberal Arts</option>
+                    <option value="Science">Science</option>
+                    <option value="Undecided">Undecided</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Do you recommend studying?</p>
+                <label><input name="user-study-option" type="radio" value="yes" checked>Yes</label>
+                <label><input name="user-study-option" type="radio" value="No">No</label>
+            </div>
+            <div class="form-group">
+                <p>Where do you recommend to study(Check all that apply to you)?</p>
+                <label for="study-location"></label>
+                <select id="study-location" name="study-location" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="Student Center">Student Center</option>
+                    <option value="Instruction center">Instructional Center</option>
+                    <option value="CULC">Clough Undergraduate Learning Commons</option>
+                    <option value="Crosland Libary">CrosLand Library</option>
+                    <option value="Scheller's building">Scheller Business building</option>
+                    <option value="MRDC">Manufactoring Related Discipline Complex(MRDC)</option>
+                    <option value="Klaus">Kalus Computing</option>
+                    <option value="Dorm/Apartment">Dorm/Apartment</option>
+                    <option value="Bush">Inside the bush in the middle of now where</option>
+                    <option value="Other">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Any Suggestions?</p>
+                <label id="comments-label" for="comments"></label>
+                <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
